@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: content-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/content/**
+        - id: onboarding-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/onboarding/**
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+
