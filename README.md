@@ -14,3 +14,9 @@ contacts, policies, learning resources).
 
 ## Conventions
 - No direct commits to `main` — branch per task, PR to merge.
+
+## Architecture
+![Architecture diagram](docs/architecture-diagram.png)
+
+The frontend talks only to the API Gateway, which routes to three independent
+services — Identity, Onboarding, Content — each with its own database.
