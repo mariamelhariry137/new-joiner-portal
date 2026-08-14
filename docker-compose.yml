@@ -1,0 +1,75 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: my-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/postgres/init-databases.sh:/docker-entrypoint-initdb.d/init-databases.sh
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER} -d postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - portal-net
+
+  onboarding-service:
+    build:
+      context: .
+      dockerfile: onboarding-service/Dockerfile
+    container_name: onboarding-service
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/onboarding_db
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8082:8082"
+    networks:
+      - portal-net
+
+  content-service:
+    build:
+      context: .
+      dockerfile: content-service/Dockerfile
+    container_name: content-service
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/content_db
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8083:8083"
+    networks:
+      - portal-net
+
+  gateway:
+    build:
+      context: .
+      dockerfile: gateway/Dockerfile
+    container_name: gateway
+    depends_on:
+      - onboarding-service
+      - content-service
+    ports:
+      - "8080:8080"
+    networks:
+      - portal-net
+
+volumes:
+  pgdata:
+
+networks:
+  portal-net:
+    driver: bridge
