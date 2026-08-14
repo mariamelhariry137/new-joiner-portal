@@ -7,12 +7,45 @@ import com.newjoinerportal.auth.exception.EmailAlreadyExistsException;
 import com.newjoinerportal.auth.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import com.newjoinerportal.auth.dto.LoginRequest;
+import com.newjoinerportal.auth.dto.LoginResponse;
+import com.newjoinerportal.auth.exception.InvalidCredentialsException;
 
 @Service
 public class AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+
+    public LoginResponse login(LoginRequest request) {
+
+        String normalizedEmail =
+                request.email().trim().toLowerCase();
+
+        User user = userRepository
+                .findByEmailIgnoreCase(normalizedEmail)
+                .orElseThrow(() ->
+                        new InvalidCredentialsException(
+                                "Invalid email or password"
+                        )
+                );
+
+        if (!passwordEncoder.matches(
+                request.password(),
+                user.getPasswordHash())) {
+
+            throw new InvalidCredentialsException(
+                    "Invalid email or password"
+            );
+        }
+
+        return new LoginResponse(
+                user.getId(),
+                user.getEmail(),
+                user.getFirstName(),
+                user.getLastName()
+        );
+    }
 
     public AuthService(
             UserRepository userRepository,
