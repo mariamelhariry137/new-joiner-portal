@@ -24,6 +24,7 @@ public class TeamController {
     public ResponseEntity<Team> getTeamById(@PathVariable Long id) {
         Team team = teamService.getTeamById(id);
         if (team == null) {
+
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(team);
