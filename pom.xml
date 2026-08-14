@@ -17,6 +17,7 @@
         <module>gateway</module>
         <module>content-service</module>
         <module>onboarding-service</module>
+        <module>auth-service</module>
     </modules>
 
     <properties>
