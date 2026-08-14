@@ -19,7 +19,27 @@ server:
   port: 8083
   servlet:
     context-path: /api
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
+      operations-sorter: method
+      tags-sorter: alpha
+      try-it-out-enabled: true
+      filter: true
+      paths-sorter: alpha
 
+    api-docs:
+      path: /v3/api-docs
+      enabled: true
+
+    packages-to-scan: com.newjoinerportal
+
+    paths-to-match: /**
+
+    show-actuator: false
+
+    cache:
+      disabled: true
 management:
   endpoints:
     web:
