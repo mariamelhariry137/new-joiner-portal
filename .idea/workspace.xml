@@ -7,10 +7,34 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/resources/db/migration/V3__seed_checklist_items.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/dto/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/DataIntegrityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/DuplicateResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/GlobalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/ResourceNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/ValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/LearningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/LearningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/PolicyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/PolicyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/LearningResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/LearningResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Policy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/LearningRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/LearningRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/PolicyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/PolicyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/TeamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/LearningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/LearningService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/PolicyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/PolicyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +58,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -120,6 +145,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3HpOyK7IlBSmX0mz40faLfET8fK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
@@ -155,7 +183,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "feature/onboarding-seed-data",
+    "git-widget-placeholder": "api-validation",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -195,7 +223,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OnboardingServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ContentServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
