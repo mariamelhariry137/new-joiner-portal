@@ -57,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
         <option value="Exception" />
       </list>
@@ -71,12 +72,12 @@
     &quot;assignee&quot;: &quot;mariamelhariry137&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mariamelhariry137/new-joiner-portal.git&quot;,
-    &quot;accountId&quot;: &quot;403cdf50-98f4-4e6a-9077-9556bb429bdb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mariamelhariry137/new-joiner-portal.git",
+    "accountId": "1ea59bf9-94d3-4742-8f3c-e23723340476"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -168,6 +169,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CurrentUserProfileTest.executor": "Run",
+    "JUnit.SecurityIntegrationTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -193,6 +196,9 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "to.speed.mode.migration.done": "true"
   },
@@ -216,7 +222,9 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="AuthServiceApplication" value="STOPPED" />
               <entry key="ContentServiceApplication" value="STOPPED" />
+              <entry key="OnboardingServiceApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
