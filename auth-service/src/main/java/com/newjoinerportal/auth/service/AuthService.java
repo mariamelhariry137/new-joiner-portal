@@ -7,12 +7,29 @@ import com.newjoinerportal.auth.exception.EmailAlreadyExistsException;
 import com.newjoinerportal.auth.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
+import com.newjoinerportal.auth.dto.ProfileResponse;
+import com.newjoinerportal.auth.entity.User;
+import com.newjoinerportal.auth.exception.UserNotFoundException;
 @Service
 public class AuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    public ProfileResponse getCurrentUserProfile(String email) {
+
+        User user = userRepository
+                .findByEmailIgnoreCase(email)
+                .orElseThrow(() ->
+                        new UserNotFoundException("User not found")
+                );
+
+        return new ProfileResponse(
+                user.getId(),
+                user.getEmail(),
+                user.getFirstName(),
+                user.getLastName()
+        );
+    }
 
     public AuthService(
             UserRepository userRepository,
