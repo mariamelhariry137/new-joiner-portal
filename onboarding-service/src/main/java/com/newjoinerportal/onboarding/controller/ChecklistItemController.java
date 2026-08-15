@@ -1,6 +1,6 @@
 package com.newjoinerportal.onboarding.controller;
 
-import com.newjoinerportal.onboarding.entity.ChecklistItem;
+import com.newjoinerportal.onboarding.ChecklistItem;
 import com.newjoinerportal.onboarding.service.ChecklistItemService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

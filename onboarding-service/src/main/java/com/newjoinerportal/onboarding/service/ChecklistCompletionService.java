@@ -3,10 +3,12 @@ package com.newjoinerportal.onboarding.service;
 import com.newjoinerportal.onboarding.ChecklistCompletion;
 import com.newjoinerportal.onboarding.dto.ChecklistProgressResponse;
 import com.newjoinerportal.onboarding.ChecklistItem;
+import com.newjoinerportal.onboarding.dto.MarkCompletionResponse;
 import com.newjoinerportal.onboarding.repository.ChecklistCompletionRepository;
 import com.newjoinerportal.onboarding.repository.ChecklistItemRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -44,5 +46,40 @@ public class ChecklistCompletionService {
                     );
                 })
                 .toList();
+    }
+
+    public MarkCompletionResponse markCompletion(Long userId, Long checklistItemId, boolean completed) {
+        ChecklistItem item = checklistItemRepository.findById(checklistItemId)
+                .orElseThrow(() -> new ChecklistItemNotFoundException(
+                        "No checklist item found with id " + checklistItemId));
+
+        ChecklistCompletion completion = checklistCompletionRepository
+                .findByUserIdAndChecklistItemId(userId, checklistItemId)
+                .orElseGet(() -> new ChecklistCompletion(userId, checklistItemId, false));
+
+        completion.setCompleted(completed);
+        completion.setCompletedAt(completed ? LocalDateTime.now() : null);
+        ChecklistCompletion saved = checklistCompletionRepository.save(completion);
+
+        double percentage = calculateCompletionPercentage(userId);
+
+        return new MarkCompletionResponse(
+                item.getId(),
+                saved.isCompleted(),
+                saved.getCompletedAt(),
+                percentage
+        );
+    }
+
+    private double calculateCompletionPercentage(Long userId) {
+        long totalItems = checklistItemRepository.count();
+        if (totalItems == 0) return 0.0;
+
+        long completedCount = checklistCompletionRepository.findAllByUserId(userId)
+                .stream()
+                .filter(ChecklistCompletion::isCompleted)
+                .count();
+
+        return (completedCount * 100.0) / totalItems;
     }
 }

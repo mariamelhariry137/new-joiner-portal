@@ -8,14 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/UserProgressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/dto/ChecklistProgressResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/service/ChecklistCompletionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/service/ChecklistItemsNotConfiguredException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistCompletionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/dto/MarkCompletionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/dto/MarkCompletionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/service/ChecklistItemNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/ChecklistItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/ChecklistItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/service/ChecklistCompletionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/service/ChecklistCompletionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,23 +62,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3333069812204696" />
-      <entry key="MS500" value="3.000082827636976" />
-      <entry key="S2" value="5.3609613947099" />
-      <entry key="S5" value="6.262532719172941" />
-      <entry key="S10" value="6.6205646242134915" />
-      <entry key="S30" value="8.35456102152215" />
-      <entry key="S60" value="13.3583693682809" />
-      <entry key="M2" value="20.365749660885804" />
-      <entry key="M5" value="27.83806427844804" />
-      <entry key="M10" value="31.35197132556505" />
-      <entry key="M15" value="33.12633049188481" />
-      <entry key="M30" value="36.861013529631464" />
-      <entry key="H1" value="41.331606754755825" />
-      <entry key="H2" value="45.446837287387524" />
-      <entry key="H4" value="50.91052337165835" />
-      <entry key="D1" value="80.73829009899644" />
-      <entry key="W1" value="96.64481946425741" />
+      <entry key="MS100" value="1.5134294103060286" />
+      <entry key="MS500" value="4.0336726997791965" />
+      <entry key="S2" value="7.060927954079641" />
+      <entry key="S5" value="8.138036717397242" />
+      <entry key="S10" value="8.559641630434433" />
+      <entry key="S30" value="10.407625507221235" />
+      <entry key="S60" value="16.206016578194124" />
+      <entry key="M2" value="26.8333083617317" />
+      <entry key="M5" value="41.56261042821328" />
+      <entry key="M10" value="49.40848387580532" />
+      <entry key="M15" value="52.917628297766164" />
+      <entry key="M30" value="58.53993023223987" />
+      <entry key="H1" value="64.05567136055697" />
+      <entry key="H2" value="68.75794247429857" />
+      <entry key="H4" value="74.53361426938548" />
+      <entry key="D1" value="104.64661347197392" />
+      <entry key="W1" value="120.62952943960966" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -88,36 +87,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="2.162568915948722E-233" />
-      <entry key="M2" value="4.650343069216376E-117" />
-      <entry key="M5" value="2.9338953511277637E-47" />
-      <entry key="M10" value="5.5881671453707424E-24" />
-      <entry key="M15" value="3.395362887893735E-16" />
-      <entry key="M30" value="2.3152450573551293E-8" />
-      <entry key="H1" value="2.115151152302697E-4" />
-      <entry key="H2" value="0.02372624991382587" />
-      <entry key="H4" value="0.3037218939631407" />
-      <entry key="D1" value="3.0738901069797313" />
-      <entry key="W1" value="4.662103949827287" />
+      <entry key="S60" value="5.40461132749996E-234" />
+      <entry key="M2" value="2.3247820764223408E-117" />
+      <entry key="M5" value="2.2233279166956585E-47" />
+      <entry key="M10" value="4.864619078443752E-24" />
+      <entry key="M15" value="3.095559562410918E-16" />
+      <entry key="M30" value="2.2106676165268218E-8" />
+      <entry key="H1" value="2.0668294926594251E-4" />
+      <entry key="H2" value="0.02345366521117558" />
+      <entry key="H4" value="0.30197216304688074" />
+      <entry key="D1" value="3.070931568915099" />
+      <entry key="W1" value="4.661462663547865" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2697795367447358" />
-      <entry key="MS500" value="2.963791647265658" />
-      <entry key="S2" value="5.343405799773251" />
-      <entry key="S5" value="6.2543228110000575" />
-      <entry key="S10" value="6.616223699104859" />
-      <entry key="S30" value="8.35201917146852" />
-      <entry key="S60" value="13.355326668042824" />
-      <entry key="M2" value="20.3629707527654" />
-      <entry key="M5" value="27.836409256896314" />
-      <entry key="M10" value="31.35092035577642" />
-      <entry key="M15" value="33.12541442021373" />
-      <entry key="M30" value="36.860198559803614" />
-      <entry key="H1" value="41.33119036038849" />
-      <entry key="H2" value="45.47015339804584" />
-      <entry key="H4" value="51.21397117095753" />
-      <entry key="D1" value="83.81206885046328" />
-      <entry key="W1" value="101.30690253725726" />
+      <entry key="MS100" value="1.4642304320882948" />
+      <entry key="MS500" value="3.992867017669037" />
+      <entry key="S2" value="7.040305306804888" />
+      <entry key="S5" value="8.128353075038499" />
+      <entry key="S10" value="8.554520499054599" />
+      <entry key="S30" value="10.405302664872224" />
+      <entry key="S60" value="16.20360103798128" />
+      <entry key="M2" value="26.83072149177455" />
+      <entry key="M5" value="41.56072679210519" />
+      <entry key="M10" value="49.40722163145944" />
+      <entry key="M15" value="52.91655361671172" />
+      <entry key="M30" value="58.53902817902137" />
+      <entry key="H1" value="64.05520145936346" />
+      <entry key="H2" value="68.7809589298615" />
+      <entry key="H4" value="74.83529795690359" />
+      <entry key="D1" value="107.7174311229724" />
+      <entry key="W1" value="125.29097084759753" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -143,42 +142,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\Lenovo\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe&quot;,
-    &quot;Spring Boot.ContentServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OnboardingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/onboarding-user-progress-endpoint&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\Lenovo\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe",
+    "Spring Boot.ContentServiceApplication.executor": "Run",
+    "Spring Boot.OnboardingServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "feature/onboarding-mark-completion-endpoint",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
