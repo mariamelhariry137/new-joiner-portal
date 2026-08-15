@@ -1,6 +1,9 @@
 package com.newjoinerportal.content.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -11,9 +14,12 @@ public class Team {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "team name is required")
+    @Size(min=2, max = 50, message="team name must be between 2 and 50 characters")
     @Column(nullable = false)
     private String name;
 
+    @Size(max=500, message = "description can not exceed 500 characters")
     @Column(columnDefinition = "TEXT")
     private String description;
 

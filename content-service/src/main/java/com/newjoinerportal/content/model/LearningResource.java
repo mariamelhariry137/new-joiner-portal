@@ -1,6 +1,9 @@
 package com.newjoinerportal.content.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -11,12 +14,17 @@ public class LearningResource {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Title cannot be blank")
+    @Size(min=2,max=20)
     @Column(nullable = false)
     private String title;
 
-    @Column(columnDefinition = "TEXT")
+    @NotBlank(message = "description of resouce cant be blank")
+    @Column(columnDefinition = "TEXT",nullable = false)
     private String description;
 
+    @NotBlank(message = "url of resouce cant be blank")
+    @Column(columnDefinition = "TEXT",nullable = false)
     private String url;
 
     @Column(name = "created_at")
