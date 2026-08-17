@@ -32,10 +32,11 @@ public class JwtService {
 
         JwtClaimsSet claims = JwtClaimsSet.builder()
                 .issuer("auth-service")
-                .subject(user.getEmail())
+                .subject(String.valueOf(user.getId()))
                 .issuedAt(now)
                 .expiresAt(now.plusSeconds(expirationSeconds))
-                .claim("userId", user.getId())
+                .claim("email", user.getEmail())
+                .claim("role", user.getRole())
                 .build();
 
         JwsHeader header =

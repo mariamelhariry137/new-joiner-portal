@@ -49,7 +49,7 @@ public class AuthService {
         );
         user.setFirstName(request.firstName().trim());
         user.setLastName(request.lastName().trim());
-
+        user.setRole("USER");
         User savedUser = userRepository.save(user);
 
         return new RegisterResponse(
