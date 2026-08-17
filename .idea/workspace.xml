@@ -54,61 +54,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2581424014897813" />
-      <entry key="MS500" value="2.7904833255511363" />
-      <entry key="S2" value="4.743662864969703" />
-      <entry key="S5" value="5.442216911961291" />
-      <entry key="S10" value="5.710902537756396" />
-      <entry key="S30" value="5.901264667461859" />
-      <entry key="S60" value="5.950359050150734" />
-      <entry key="M2" value="5.995836259646085" />
-      <entry key="M5" value="7.613913906823935" />
-      <entry key="M10" value="13.596514876158047" />
-      <entry key="M15" value="19.098035523985864" />
-      <entry key="M30" value="30.2166453943765" />
-      <entry key="H1" value="41.106896918659025" />
-      <entry key="H2" value="49.56077705653742" />
-      <entry key="H4" value="56.55163024240678" />
-      <entry key="D1" value="118.1203673929214" />
-      <entry key="W1" value="201.87993507209038" />
+      <entry key="MS100" value="1.1231850751298853" />
+      <entry key="MS500" value="2.6582576659078407" />
+      <entry key="S2" value="4.638556626297043" />
+      <entry key="S5" value="5.385625632060442" />
+      <entry key="S10" value="5.702628460397181" />
+      <entry key="S30" value="6.343237391731847" />
+      <entry key="S60" value="6.897119356462311" />
+      <entry key="M2" value="7.402652081779481" />
+      <entry key="M5" value="8.839815785390233" />
+      <entry key="M10" value="13.082056198651692" />
+      <entry key="M15" value="18.001795773453736" />
+      <entry key="M30" value="29.925692204846527" />
+      <entry key="H1" value="43.03110704974779" />
+      <entry key="H2" value="53.75561162636592" />
+      <entry key="H4" value="62.33851548124351" />
+      <entry key="D1" value="125.33830405598269" />
+      <entry key="W1" value="209.6885540656003" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="3.640731799541741E-300" />
-      <entry key="S10" value="1.908070176786411E-150" />
-      <entry key="S30" value="1.240313434637983E-50" />
-      <entry key="S60" value="1.113693599980704E-25" />
-      <entry key="M2" value="3.3372048183782546E-13" />
-      <entry key="M5" value="1.0217699940982673E-5" />
-      <entry key="M10" value="0.0031965137166892698" />
-      <entry key="M15" value="0.02169956601946807" />
-      <entry key="M30" value="0.14730772559329006" />
-      <entry key="H1" value="0.38380688580755223" />
-      <entry key="H2" value="0.6195215631732599" />
-      <entry key="H4" value="0.7876023641747791" />
-      <entry key="D1" value="2.019066828345874" />
-      <entry key="W1" value="4.997640771141605" />
+      <entry key="MS100" value="3.0160890434612146E-74" />
+      <entry key="MS500" value="1.976463651560379E-15" />
+      <entry key="S2" value="2.1084932156252667E-4" />
+      <entry key="S5" value="0.033852354737344735" />
+      <entry key="S10" value="0.183990094128311" />
+      <entry key="S30" value="0.568763188909821" />
+      <entry key="S60" value="0.7541639005612912" />
+      <entry key="M2" value="0.868426105412139" />
+      <entry key="M5" value="0.9451349930026584" />
+      <entry key="M10" value="0.9734094854712642" />
+      <entry key="M15" value="0.9928442661934423" />
+      <entry key="M30" value="1.0977754647806035" />
+      <entry key="H1" value="1.3226253243645485" />
+      <entry key="H2" value="1.5697676042192894" />
+      <entry key="H4" value="1.7556943415638728" />
+      <entry key="D1" value="3.005521149142691" />
+      <entry key="W1" value="5.992878829073218" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2066553403939193" />
-      <entry key="MS500" value="2.7239714872410983" />
-      <entry key="S2" value="4.712855011211563" />
-      <entry key="S5" value="5.4281512497057385" />
-      <entry key="S10" value="5.703547815654996" />
-      <entry key="S30" value="5.898738375670352" />
-      <entry key="S60" value="5.949086354130264" />
-      <entry key="M2" value="5.995196278112964" />
-      <entry key="M5" value="7.61363450233522" />
-      <entry key="M10" value="13.599504196761764" />
-      <entry key="M15" value="19.119547783487572" />
-      <entry key="M30" value="30.363777593592463" />
-      <entry key="H1" value="41.49055519319345" />
-      <entry key="H2" value="50.18019579295297" />
-      <entry key="H4" value="57.33916839877031" />
-      <entry key="D1" value="120.1393730331077" />
-      <entry key="W1" value="206.8775532307407" />
+      <entry key="MS100" value="1.0769480322503486" />
+      <entry key="MS500" value="2.60557588021111" />
+      <entry key="S2" value="4.615369915073023" />
+      <entry key="S5" value="5.397151734747096" />
+      <entry key="S10" value="5.8431247940534545" />
+      <entry key="S30" value="6.85163201928577" />
+      <entry key="S60" value="7.603060295825994" />
+      <entry key="M2" value="8.23994388365981" />
+      <entry key="M5" value="9.770293567596198" />
+      <entry key="M10" value="14.047669307314441" />
+      <entry key="M15" value="18.98930150054692" />
+      <entry key="M30" value="31.02067172612044" />
+      <entry key="H1" value="44.3522591559185" />
+      <entry key="H2" value="55.324607922179936" />
+      <entry key="H4" value="64.09380916485162" />
+      <entry key="D1" value="128.34370782023663" />
+      <entry key="W1" value="215.68140221503666" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -138,6 +138,7 @@
   "keyToString": {
     "JUnit.ChecklistCompletionControllerTest (1).executor": "Run",
     "JUnit.ChecklistCompletionControllerTest.executor": "Run",
+    "JUnit.ChecklistCompletionIsolationTest.executor": "Run",
     "JUnit.ChecklistCompletionServiceTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -154,7 +155,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "feature/onboarding-unknown-item-tests",
+    "git-widget-placeholder": "feature/onboarding-isolation-tests",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
