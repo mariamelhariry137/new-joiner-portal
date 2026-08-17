@@ -8,12 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/AuthenticatedUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/CurrentUserResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onboarding-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistCompletionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistCompletionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/UserProgressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,61 +65,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000727777104" />
-      <entry key="MS500" value="1.0592106294124541" />
-      <entry key="S2" value="1.4932872829696298" />
-      <entry key="S5" value="1.7537719425158333" />
-      <entry key="S10" value="1.868200414740707" />
-      <entry key="S30" value="1.9619028452026614" />
-      <entry key="S60" value="2.213418900861766" />
-      <entry key="M2" value="3.377820755916423" />
-      <entry key="M5" value="7.0684907735314" />
-      <entry key="M10" value="10.68419279425457" />
-      <entry key="M15" value="12.557894045436647" />
-      <entry key="M30" value="14.943067841699346" />
-      <entry key="H1" value="16.38202994473322" />
-      <entry key="H2" value="17.879583124481638" />
-      <entry key="H4" value="25.50632409261966" />
-      <entry key="D1" value="93.63241355161877" />
-      <entry key="W1" value="138.7278652357616" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000000069" />
+      <entry key="S60" value="1.0000003504557886" />
+      <entry key="M2" value="1.0025099802985242" />
+      <entry key="M5" value="1.5163739163444554" />
+      <entry key="M10" value="4.048647567307345" />
+      <entry key="M15" value="6.5101044951406015" />
+      <entry key="M30" value="10.958981799758408" />
+      <entry key="H1" value="14.390606145485553" />
+      <entry key="H2" value="16.698864570409246" />
+      <entry key="H4" value="19.87184721065505" />
+      <entry key="D1" value="78.65101334816087" />
+      <entry key="W1" value="160.56723469929406" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="5.805846361552408E-239" />
-      <entry key="M5" value="5.081557419528106E-96" />
-      <entry key="M10" value="2.325656109446592E-48" />
-      <entry key="M15" value="1.8926498304213664E-32" />
-      <entry key="M30" value="1.7285780827208103E-16" />
-      <entry key="H1" value="1.8276264153142785E-8" />
-      <entry key="H2" value="2.2054748500746816E-4" />
-      <entry key="H4" value="0.029282800179536394" />
-      <entry key="D1" value="2.0815064195790973" />
-      <entry key="W1" value="4.409554621085681" />
+      <entry key="S2" value="3.0765597551484432E-232" />
+      <entry key="S5" value="2.4844264364852595E-93" />
+      <entry key="S10" value="4.984402107058839E-47" />
+      <entry key="S30" value="3.680196632889413E-16" />
+      <entry key="S60" value="1.9183838596301344E-8" />
+      <entry key="M2" value="1.3850573488596545E-4" />
+      <entry key="M5" value="0.028614561984704585" />
+      <entry key="M10" value="0.16915839318433057" />
+      <entry key="M15" value="0.30586447208886935" />
+      <entry key="M30" value="0.5530501533214408" />
+      <entry key="H1" value="0.7436734184582947" />
+      <entry key="H2" value="0.8623651061106576" />
+      <entry key="H4" value="0.9292324878788244" />
+      <entry key="D1" value="2.0754881402958625" />
+      <entry key="W1" value="5.017356652919764" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.042393991191044283" />
-      <entry key="MS500" value="0.5717220443819333" />
-      <entry key="S2" value="1.3017957799022566" />
-      <entry key="S5" value="1.664016588188488" />
-      <entry key="S10" value="1.8205175755091232" />
-      <entry key="S30" value="1.9452920805213192" />
-      <entry key="S60" value="2.204692119297409" />
-      <entry key="M2" value="3.372648689463292" />
-      <entry key="M5" value="7.065664992860807" />
-      <entry key="M10" value="10.682505231978421" />
-      <entry key="M15" value="12.556686016763292" />
-      <entry key="M30" value="14.94241472962176" />
-      <entry key="H1" value="16.38168936412857" />
-      <entry key="H2" value="17.879625148577034" />
-      <entry key="H4" value="25.53548890490368" />
-      <entry key="D1" value="95.71382564437862" />
-      <entry key="W1" value="143.1373971735745" />
+      <entry key="MS100" value="0.9012504626108302" />
+      <entry key="MS500" value="0.9794202975869268" />
+      <entry key="S2" value="0.9948148855014217" />
+      <entry key="S5" value="0.9979227189990506" />
+      <entry key="S10" value="0.998960819551523" />
+      <entry key="S30" value="0.9996534864594167" />
+      <entry key="S60" value="0.9998270976147664" />
+      <entry key="M2" value="1.0025609686733703" />
+      <entry key="M5" value="1.5448812554598383" />
+      <entry key="M10" value="4.217574102168195" />
+      <entry key="M15" value="6.81569879683508" />
+      <entry key="M30" value="11.511792351436778" />
+      <entry key="H1" value="15.134119455515348" />
+      <entry key="H2" value="17.56113674295724" />
+      <entry key="H4" value="20.801026218437073" />
+      <entry key="D1" value="80.7264419533002" />
+      <entry key="W1" value="165.5845691228796" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -158,7 +162,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "feature/onboarding-api-docs",
+    "git-widget-placeholder": "feature/onboarding-auth-integration",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
