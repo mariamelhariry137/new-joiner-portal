@@ -2,6 +2,7 @@ package com.newjoinerportal.content.controller;
 
 import com.newjoinerportal.content.model.Contact;
 import com.newjoinerportal.content.service.ContactService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,37 +17,31 @@ public class ContactController {
     private ContactService contactService;
 
     @GetMapping
-    public List<Contact> getAllContacts() {
-        return contactService.getAllContacts();
+    public ResponseEntity<List<Contact>> getAllContacts() {
+        return ResponseEntity.ok(contactService.getAllContacts());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Contact> getContactById(@PathVariable Long id) {
         Contact contact = contactService.getContactById(id);
-        if (contact == null) {
-            return ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(contact);
     }
 
     @GetMapping("/team/{teamId}")
-    public List<Contact> getContactsByTeamId(@PathVariable Long teamId) {
-        return contactService.getContactsByTeamId(teamId);
+    public ResponseEntity<List<Contact>> getContactsByTeamId(@PathVariable Long teamId) {
+        return ResponseEntity.ok(contactService.getContactsByTeamId(teamId));
     }
 
     @PostMapping
-    public ResponseEntity<Contact> createContact(@RequestBody Contact contact) {
-        Contact created = contactService.createContact(contact);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+    public ResponseEntity<Contact> createContact(@Valid @RequestBody Contact contact, @RequestParam(required = false) Long teamId) {
+        Contact createdContact = contactService.createContact(contact,teamId);
+        return new ResponseEntity<>(createdContact,HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Contact> updateContact(@PathVariable Long id, @RequestBody Contact contact) {
-        Contact updated = contactService.updateContact(id, contact);
-        if (updated == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(updated);
+    public ResponseEntity<Contact> updateContact(@PathVariable Long id, @Valid @RequestBody Contact contact, @RequestParam(required = false)Long teamId) {
+        Contact updatedContact = contactService.updateContact(id, contact, teamId);
+        return ResponseEntity.ok(updatedContact);
     }
 
     @DeleteMapping("/{id}")

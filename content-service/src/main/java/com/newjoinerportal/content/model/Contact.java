@@ -2,7 +2,10 @@
 package com.newjoinerportal.content.model;
 
 import jakarta.persistence.*;
-        import java.time.LocalDateTime;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "contacts")
@@ -12,12 +15,19 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Name cannot be blank")
+    @Size(min=2,max=20)
     @Column(nullable = false)
     private String name;
 
-    @Column(unique = true)
+    @NotBlank(message = "Email cannot be blank")
+    @Size(min=2,max=20)
+    @Column(unique = true,nullable = false)
     private String email;
 
+    @NotBlank(message = "Phone cannot be blank")
+    @Size(min = 10, max = 15, message = "Phone number must be between 10 and 15 digits")
+    @Column(nullable = false)
     private String phone;
 
     @ManyToOne
