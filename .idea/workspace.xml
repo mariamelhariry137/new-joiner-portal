@@ -8,16 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/AuthenticatedUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/CurrentUserResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding-service/src/test/java/com/newjoinerportal/onboarding/service/ChecklistCompletionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistCompletionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistCompletionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,61 +58,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000000000069" />
-      <entry key="S60" value="1.0000003504557886" />
-      <entry key="M2" value="1.0025099802985242" />
-      <entry key="M5" value="1.5163739163444554" />
-      <entry key="M10" value="4.048647567307345" />
-      <entry key="M15" value="6.5101044951406015" />
-      <entry key="M30" value="10.958981799758408" />
-      <entry key="H1" value="14.390606145485553" />
-      <entry key="H2" value="16.698864570409246" />
-      <entry key="H4" value="19.87184721065505" />
-      <entry key="D1" value="78.65101334816087" />
-      <entry key="W1" value="160.56723469929406" />
+      <entry key="MS100" value="1.0000000120959802" />
+      <entry key="MS500" value="1.08698689178885" />
+      <entry key="S2" value="3.857840149649617" />
+      <entry key="S5" value="7.3175991235389235" />
+      <entry key="S10" value="10.711148482812623" />
+      <entry key="S30" value="18.73044355052225" />
+      <entry key="S60" value="23.265730908396343" />
+      <entry key="M2" value="26.294805891274983" />
+      <entry key="M5" value="28.440809300588104" />
+      <entry key="M10" value="29.584485968534082" />
+      <entry key="M15" value="30.82247340506316" />
+      <entry key="M30" value="34.73991425257532" />
+      <entry key="H1" value="39.59501434824683" />
+      <entry key="H2" value="43.66366367435763" />
+      <entry key="H4" value="47.98605830993651" />
+      <entry key="D1" value="107.37353983234505" />
+      <entry key="W1" value="190.19291563031842" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.0765597551484432E-232" />
-      <entry key="S5" value="2.4844264364852595E-93" />
-      <entry key="S10" value="4.984402107058839E-47" />
-      <entry key="S30" value="3.680196632889413E-16" />
-      <entry key="S60" value="1.9183838596301344E-8" />
-      <entry key="M2" value="1.3850573488596545E-4" />
-      <entry key="M5" value="0.028614561984704585" />
-      <entry key="M10" value="0.16915839318433057" />
-      <entry key="M15" value="0.30586447208886935" />
-      <entry key="M30" value="0.5530501533214408" />
-      <entry key="H1" value="0.7436734184582947" />
-      <entry key="H2" value="0.8623651061106576" />
-      <entry key="H4" value="0.9292324878788244" />
-      <entry key="D1" value="2.0754881402958625" />
-      <entry key="W1" value="5.017356652919764" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.132366049919897E-215" />
+      <entry key="S10" value="3.3650647095113834E-108" />
+      <entry key="S30" value="1.498526658429685E-36" />
+      <entry key="S60" value="1.2241432344418204E-18" />
+      <entry key="M2" value="1.1064100661336286E-9" />
+      <entry key="M5" value="2.615570601506296E-4" />
+      <entry key="M10" value="0.01617272581077874" />
+      <entry key="M15" value="0.06395219901957819" />
+      <entry key="M30" value="0.2528877201834407" />
+      <entry key="H1" value="0.5028794290716643" />
+      <entry key="H2" value="0.7091399972948741" />
+      <entry key="H4" value="0.8426452718029408" />
+      <entry key="D1" value="2.0419275242030794" />
+      <entry key="W1" value="5.005685435803938" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108302" />
-      <entry key="MS500" value="0.9794202975869268" />
-      <entry key="S2" value="0.9948148855014217" />
-      <entry key="S5" value="0.9979227189990506" />
-      <entry key="S10" value="0.998960819551523" />
-      <entry key="S30" value="0.9996534864594167" />
-      <entry key="S60" value="0.9998270976147664" />
-      <entry key="M2" value="1.0025609686733703" />
-      <entry key="M5" value="1.5448812554598383" />
-      <entry key="M10" value="4.217574102168195" />
-      <entry key="M15" value="6.81569879683508" />
-      <entry key="M30" value="11.511792351436778" />
-      <entry key="H1" value="15.134119455515348" />
-      <entry key="H2" value="17.56113674295724" />
-      <entry key="H4" value="20.801026218437073" />
-      <entry key="D1" value="80.7264419533002" />
-      <entry key="W1" value="165.5845691228796" />
+      <entry key="MS100" value="0.9659363407645962" />
+      <entry key="MS500" value="1.0796347330469935" />
+      <entry key="S2" value="3.8521638176664337" />
+      <entry key="S5" value="7.313295986817313" />
+      <entry key="S10" value="10.707598641968985" />
+      <entry key="S30" value="18.727701703988256" />
+      <entry key="S60" value="23.263867853590853" />
+      <entry key="M2" value="26.293705223323794" />
+      <entry key="M5" value="28.440581318501255" />
+      <entry key="M10" value="29.600383464878373" />
+      <entry key="M15" value="30.886198397169125" />
+      <entry key="M30" value="34.99260603381577" />
+      <entry key="H1" value="40.097742063280556" />
+      <entry key="H2" value="44.37270546217986" />
+      <entry key="H4" value="48.82864417457373" />
+      <entry key="D1" value="109.41540696341086" />
+      <entry key="W1" value="195.1985786283472" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -147,6 +140,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ChecklistCompletionServiceTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -162,7 +156,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "feature/onboarding-auth-integration",
+    "git-widget-placeholder": "feature/onboarding-progress-tests",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -202,7 +196,22 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OnboardingServiceApplication">
+  <component name="RunManager" selected="JUnit.ChecklistCompletionServiceTest">
+    <configuration name="ChecklistCompletionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onboarding-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newjoinerportal.onboarding.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newjoinerportal.onboarding.service" />
+      <option name="MAIN_CLASS_NAME" value="com.newjoinerportal.onboarding.service.ChecklistCompletionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,6 +245,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ChecklistCompletionServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
