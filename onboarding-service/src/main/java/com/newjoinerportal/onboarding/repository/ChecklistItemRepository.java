@@ -1,6 +1,6 @@
 package com.newjoinerportal.onboarding.repository;
 
-import com.newjoinerportal.onboarding.entity.ChecklistItem;
+import com.newjoinerportal.onboarding.ChecklistItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
