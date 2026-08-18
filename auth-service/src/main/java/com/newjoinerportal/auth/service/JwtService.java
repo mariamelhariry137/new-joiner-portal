@@ -32,13 +32,15 @@ public class JwtService {
 
         JwtClaimsSet claims = JwtClaimsSet.builder()
                 .issuer("auth-service")
-                .subject(String.valueOf(user.getId()))
+                .subject(user.getEmail())
                 .issuedAt(now)
                 .expiresAt(now.plusSeconds(expirationSeconds))
-                .claim("email", user.getEmail())
-                .claim("role", user.getRole())
+                .claim("userId", user.getId())
+                .claim(
+                        "roles",
+                        java.util.List.of(user.getRole().name())
+                )
                 .build();
-
         JwsHeader header =
                 JwsHeader.with(MacAlgorithm.HS256)
                         .build();
