@@ -1,9 +1,8 @@
--- Create databases for each service
-CREATE DATABASE IF NOT EXIST identity_db;
-CREATE DATABASE IF NOT EXIST onboarding_db;
-CREATE DATABASE IF NOT EXIST content_db;
+#!/bin/bash
+set -e
 
--- Grant privileges
-GRANT ALL PRIVILEGES ON DATABASE identity_db TO postgres;
-GRANT ALL PRIVILEGES ON DATABASE onboarding_db TO postgres;
-GRANT ALL PRIVILEGES ON DATABASE content_db TO postgres;
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname postgres <<-EOSQL
+    CREATE DATABASE identity_db;
+    CREATE DATABASE onboarding_db;
+    CREATE DATABASE content_db;
+EOSQL

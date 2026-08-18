@@ -1,6 +1,7 @@
 package com.newjoinerportal.onboarding.controller;
 
 import com.newjoinerportal.onboarding.dto.ErrorResponse;
+import com.newjoinerportal.onboarding.security.AuthenticatedUserException;
 import com.newjoinerportal.onboarding.service.ChecklistItemNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,5 +39,11 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(ErrorResponse.of(HttpStatus.INTERNAL_SERVER_ERROR.value(), "Internal Server Error",
                         "Something went wrong. Please try again later."));
+    }
+
+    @ExceptionHandler(AuthenticatedUserException.class)
+    public ResponseEntity<ErrorResponse> handleAuthError(AuthenticatedUserException ex) {
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                .body(ErrorResponse.of(HttpStatus.UNAUTHORIZED.value(), "Unauthorized", ex.getMessage()));
     }
 }
