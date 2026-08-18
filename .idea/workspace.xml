@@ -8,33 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/dto/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/DataIntegrityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/DuplicateResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/GlobalHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/ResourceNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/exception/ValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/LearningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/LearningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/PolicyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/PolicyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/controller/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/LearningResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/LearningResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Policy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/ContactRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/LearningRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/LearningRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/PolicyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/PolicyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/repo/TeamRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/LearningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/LearningService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/PolicyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/PolicyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/java/com/newjoinerportal/content/service/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +26,13 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="107" />
+    <option name="cachedIndexableFilesCount" value="38" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,7 +48,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/mariamelhariry137/new-joiner-portal.git",
-    "accountId": "1ea59bf9-94d3-4742-8f3c-e23723340476"
+    "accountId": "347164c3-9cd2-4d27-8ffd-46d1f9412441"
   }
 }]]></component>
   <component name="McpProjectServerCommands">
@@ -84,23 +57,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000727777104" />
-      <entry key="MS500" value="1.0592106294124541" />
-      <entry key="S2" value="1.4932872829696298" />
-      <entry key="S5" value="1.7537719425158333" />
-      <entry key="S10" value="1.868200414740707" />
-      <entry key="S30" value="1.9619028452026614" />
-      <entry key="S60" value="2.213418900861766" />
-      <entry key="M2" value="3.377820755916423" />
-      <entry key="M5" value="7.0684907735314" />
-      <entry key="M10" value="10.68419279425457" />
-      <entry key="M15" value="12.557894045436647" />
-      <entry key="M30" value="14.943067841699346" />
-      <entry key="H1" value="16.38202994473322" />
-      <entry key="H2" value="17.879583124481638" />
-      <entry key="H4" value="25.50632409261966" />
-      <entry key="D1" value="93.63241355161877" />
-      <entry key="W1" value="138.7278652357616" />
+      <entry key="MS100" value="1.578956558045987" />
+      <entry key="MS500" value="3.1867768795330274" />
+      <entry key="S2" value="5.876237440789422" />
+      <entry key="S5" value="9.005972972224177" />
+      <entry key="S10" value="13.716999381550833" />
+      <entry key="S30" value="21.334713830755373" />
+      <entry key="S60" value="24.342080306468464" />
+      <entry key="M2" value="26.081165245679557" />
+      <entry key="M5" value="27.216790802501997" />
+      <entry key="M10" value="27.829407922062515" />
+      <entry key="M15" value="28.557462544741043" />
+      <entry key="M30" value="31.21911097416393" />
+      <entry key="H1" value="35.10346760565189" />
+      <entry key="H2" value="38.876558472126476" />
+      <entry key="H4" value="44.1551962280609" />
+      <entry key="D1" value="73.80657939563417" />
+      <entry key="W1" value="89.65667338738716" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -109,36 +82,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="5.805846361552408E-239" />
-      <entry key="M5" value="5.081557419528106E-96" />
-      <entry key="M10" value="2.325656109446592E-48" />
-      <entry key="M15" value="1.8926498304213664E-32" />
-      <entry key="M30" value="1.7285780827208103E-16" />
-      <entry key="H1" value="1.8276264153142785E-8" />
-      <entry key="H2" value="2.2054748500746816E-4" />
-      <entry key="H4" value="0.029282800179536394" />
-      <entry key="D1" value="2.0815064195790973" />
-      <entry key="W1" value="4.409554621085681" />
+      <entry key="S60" value="8.193686958571622E-233" />
+      <entry key="M2" value="9.051898987300841E-117" />
+      <entry key="M5" value="3.82953903969352E-47" />
+      <entry key="M10" value="6.384403525940293E-24" />
+      <entry key="M15" value="3.710679897711333E-16" />
+      <entry key="M30" value="2.4203635991564352E-8" />
+      <entry key="H1" value="2.1626350221560503E-4" />
+      <entry key="H2" value="0.02399109179101245" />
+      <entry key="H4" value="0.3054123222848189" />
+      <entry key="D1" value="3.07673491424993" />
+      <entry key="W1" value="4.66272008532966" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.042393991191044283" />
-      <entry key="MS500" value="0.5717220443819333" />
-      <entry key="S2" value="1.3017957799022566" />
-      <entry key="S5" value="1.664016588188488" />
-      <entry key="S10" value="1.8205175755091232" />
-      <entry key="S30" value="1.9452920805213192" />
-      <entry key="S60" value="2.204692119297409" />
-      <entry key="M2" value="3.372648689463292" />
-      <entry key="M5" value="7.065664992860807" />
-      <entry key="M10" value="10.682505231978421" />
-      <entry key="M15" value="12.556686016763292" />
-      <entry key="M30" value="14.94241472962176" />
-      <entry key="H1" value="16.38168936412857" />
-      <entry key="H2" value="17.879625148577034" />
-      <entry key="H4" value="25.53548890490368" />
-      <entry key="D1" value="95.71382564437862" />
-      <entry key="W1" value="143.1373971735745" />
+      <entry key="MS100" value="1.5353461163106126" />
+      <entry key="MS500" value="3.121121285364425" />
+      <entry key="S2" value="5.8279151740249615" />
+      <entry key="S5" value="8.973106338393949" />
+      <entry key="S10" value="13.689753423600813" />
+      <entry key="S30" value="21.319718612361783" />
+      <entry key="S60" value="24.333414457127986" />
+      <entry key="M2" value="26.076494772521112" />
+      <entry key="M5" value="27.21482922486021" />
+      <entry key="M10" value="27.828294234051686" />
+      <entry key="M15" value="28.556516917642618" />
+      <entry key="M30" value="31.218285563656412" />
+      <entry key="H1" value="35.10305485447533" />
+      <entry key="H2" value="38.900141270806394" />
+      <entry key="H4" value="44.46033612463443" />
+      <entry key="D1" value="76.88320338128858" />
+      <entry key="W1" value="94.31937266878128" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -167,47 +140,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CurrentUserProfileTest.executor": "Run",
-    "JUnit.SecurityIntegrationTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHELLCHECK.PATH": "C:\\Users\\Lenovo\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe",
-    "Spring Boot.ContentServiceApplication.executor": "Run",
-    "Spring Boot.OnboardingServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "api-validation",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\Lenovo\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;Spring Boot.ContentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OnboardingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;api-validation&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -222,9 +190,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="AuthServiceApplication" value="STOPPED" />
               <entry key="ContentServiceApplication" value="STOPPED" />
-              <entry key="OnboardingServiceApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
