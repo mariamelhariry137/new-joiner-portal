@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="ALl services working">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/OpenApiConfig.java" afterDir="false" />
+    <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/controller/CurrentUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/controller/CurrentUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/content-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/filter/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/filter/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +25,62 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "romiiali"
+  }
+}]]></component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOT2Lb4M8AAAABAJiF6w&quot;,
+        &quot;number&quot;: 109
+      },
+      &quot;lastSeen&quot;: 1787059121875
+    }
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mariamelhariry137/new-joiner-portal.git",
+    "accountId": "347164c3-9cd2-4d27-8ffd-46d1f9412441"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3I5razG1F8ykiqTffC08kvdZmtj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.ContentServiceApplication.executor": "Run",
-    "git-widget-placeholder": "feature/issue-12-role-authorization",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OnboardingServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "#109 on gateway",
+    "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
@@ -79,8 +126,26 @@
       <item itemvalue="Spring Boot.OnboardingServiceApplication" />
     </list>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore" />
+      <created>1787065339688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787065339688</updated>
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ALl services working" />
