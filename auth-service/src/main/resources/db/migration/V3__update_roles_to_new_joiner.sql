@@ -1,0 +1,6 @@
+UPDATE users
+SET role = 'NEW_JOINER'
+WHERE role = 'USER';
+
+ALTER TABLE users
+    ALTER COLUMN role SET DEFAULT 'NEW_JOINER';
