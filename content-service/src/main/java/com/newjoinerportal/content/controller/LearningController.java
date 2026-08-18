@@ -2,6 +2,7 @@ package com.newjoinerportal.content.controller;
 
 import com.newjoinerportal.content.model.LearningResource;
 import com.newjoinerportal.content.service.LearningService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,31 +17,25 @@ public class LearningController {
     private LearningService learningResourceService;
 
     @GetMapping
-    public List<LearningResource> getAllLearningResources() {
-        return learningResourceService.getAllLearningResources();
+    public ResponseEntity<List<LearningResource>> getAllLearningResources() {
+        return ResponseEntity.ok(learningResourceService.getAllLearningResources());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<LearningResource> getLearningResourceById(@PathVariable Long id) {
         LearningResource resource = learningResourceService.getLearningResourceById(id);
-        if (resource == null) {
-            return ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(resource);
     }
 
     @PostMapping
-    public ResponseEntity<LearningResource> createLearningResource(@RequestBody LearningResource resource) {
+    public ResponseEntity<LearningResource> createLearningResource(@Valid @RequestBody LearningResource resource) {
         LearningResource created = learningResourceService.createLearningResource(resource);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+        return new ResponseEntity<>(created,HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<LearningResource> updateLearningResource(@PathVariable Long id, @RequestBody LearningResource resource) {
+    public ResponseEntity<LearningResource> updateLearningResource(@PathVariable Long id,@Valid @RequestBody LearningResource resource) {
         LearningResource updated = learningResourceService.updateLearningResource(id, resource);
-        if (updated == null) {
-            return ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(updated);
     }
 

@@ -38,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -51,12 +52,12 @@
     &quot;assignee&quot;: &quot;mariamelhariry137&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mariamelhariry137/new-joiner-portal.git&quot;,
-    &quot;accountId&quot;: &quot;403cdf50-98f4-4e6a-9077-9556bb429bdb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mariamelhariry137/new-joiner-portal.git",
+    "accountId": "347164c3-9cd2-4d27-8ffd-46d1f9412441"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -125,6 +126,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3HpOyK7IlBSmX0mz40faLfET8fK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
@@ -177,12 +181,12 @@
     "run.configurations.included.in.services": "true",
     "to.speed.mode.migration.done": "true"
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>

@@ -1,6 +1,9 @@
 package com.newjoinerportal.content.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -11,10 +14,12 @@ public class Policy {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Policy Title cannot be empty")
+    @Size(min=3, max = 20)
     @Column(nullable = false)
     private String title;
-
-    @Column(columnDefinition = "TEXT")
+    @NotBlank(message = "Description of policy cant be empty")
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String description;
 
     @Column(name = "created_at")
