@@ -34,3 +34,6 @@ logging:
     root: INFO
     com.newjoinerportal: DEBUG
 
+app:
+  jwt:
+    secret: ${JWT_SECRET}
