@@ -1,6 +1,6 @@
 package com.newjoinerportal.onboarding.service;
 
-import com.newjoinerportal.onboarding.entity.ChecklistItem;
+import com.newjoinerportal.onboarding.ChecklistItem;
 import com.newjoinerportal.onboarding.repository.ChecklistItemRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
