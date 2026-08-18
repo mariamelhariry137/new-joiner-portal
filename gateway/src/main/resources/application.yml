@@ -1,32 +1,102 @@
 spring:
   application:
     name: api-gateway
+
   cloud:
     gateway:
       routes:
-        - id: content-service
-          uri: http://localhost:8081
+        # Auth Service Routes
+        - id: auth-service
+          uri: http://auth-service:8081
           predicates:
-            - Path=/api/content/**
+            - Path=/api/auth/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: authCB
+                fallbackUri: forward:/fallback/auth
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+            - StripPrefix=1
+
+        # Onboarding Service Routes
         - id: onboarding-service
-          uri: http://localhost:8082
+          uri: http://onboarding-service:8082
           predicates:
             - Path=/api/onboarding/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: onboardingCB
+                fallbackUri: forward:/fallback/onboarding
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+            - StripPrefix=1
+
+        # Content Service Routes
+        - id: content-service
+          uri: http://content-service:8083
+          predicates:
+            - Path=/api/content/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: contentCB
+                fallbackUri: forward:/fallback/content
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+            - StripPrefix=1
+
+  # JWT Configuration
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret:  ${JWT_SECRET:e3GByvQwqLrYV+TgvJpoWGSI/kDpINUEdkNT4N2fkNQ=}
+
 
 server:
   port: 8080
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-  endpoint:
-    health:
-      show-details: always
 
 logging:
   level:
     root: INFO
     org.springframework.cloud.gateway: DEBUG
+    org.springframework.security: DEBUG
+    com.newjoinerportal.gateway: DEBUG
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true
+
+# Resilience4J Circuit Breaker Configuration
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 30s
+        permittedNumberOfCallsInHalfOpenState: 3
+        minimumNumberOfCalls: 5
+    instances:
+      authCB:
+        baseConfig: default
+      onboardingCB:
+        baseConfig: default
+      contentCB:
+        baseConfig: default
