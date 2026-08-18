@@ -1,5 +1,7 @@
 package com.newjoinerportal.auth.controller;
 
+import com.newjoinerportal.auth.dto.LoginRequest;
+import com.newjoinerportal.auth.dto.LoginResponse;
 import com.newjoinerportal.auth.dto.RegisterRequest;
 import com.newjoinerportal.auth.dto.RegisterResponse;
 import com.newjoinerportal.auth.service.AuthService;
@@ -22,11 +24,17 @@ public class AuthController {
     public ResponseEntity<RegisterResponse> register(
             @Valid @RequestBody RegisterRequest request) {
 
-        RegisterResponse response =
-                authService.register(request);
-
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(response);
+                .body(authService.register(request));
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<LoginResponse> login(
+            @Valid @RequestBody LoginRequest request) {
+
+        return ResponseEntity.ok(
+                authService.login(request)
+        );
     }
 }

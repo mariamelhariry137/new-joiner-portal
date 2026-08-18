@@ -26,6 +26,8 @@ public class User {
 
     @Column(name = "last_name", nullable = false)
     private String lastName;
+    @Column(nullable = false)
+    private String role = "USER";
 
     public User() {
     }
@@ -60,6 +62,13 @@ public class User {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public void setLastName(String lastName) {
