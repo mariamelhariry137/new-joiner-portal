@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="ALl services working">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/auth-service.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/controller/CurrentUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/controller/CurrentUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
