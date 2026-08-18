@@ -12,7 +12,7 @@ import com.newjoinerportal.auth.exception.UserNotFoundException;
 import com.newjoinerportal.auth.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
+import com.newjoinerportal.auth.entity.UserRole;
 @Service
 public class AuthService {
 
@@ -49,7 +49,7 @@ public class AuthService {
         );
         user.setFirstName(request.firstName().trim());
         user.setLastName(request.lastName().trim());
-        user.setRole("USER");
+        user.setRole(UserRole.NEW_JOINER);
         User savedUser = userRepository.save(user);
 
         return new RegisterResponse(
