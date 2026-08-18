@@ -21,6 +21,7 @@ public class CurrentUserResolver {
         try {
             return jwtService.extractUserId(token);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new AuthenticatedUserException("Invalid or expired token");
         }
     }
