@@ -1,4 +1,4 @@
-package com.newjoinerportal.onboarding.entity;
+package com.newjoinerportal.onboarding;
 
 import jakarta.persistence.*;
 

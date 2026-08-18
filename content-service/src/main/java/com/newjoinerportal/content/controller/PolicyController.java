@@ -2,6 +2,7 @@ package com.newjoinerportal.content.controller;
 
 import com.newjoinerportal.content.model.Policy;
 import com.newjoinerportal.content.service.PolicyService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,31 +17,27 @@ public class PolicyController {
     private PolicyService policyService;
 
     @GetMapping
-    public List<Policy> getAllPolicies() {
-        return policyService.getAllPolicies();
+    public ResponseEntity<List<Policy>> getAllPolicies() {
+        return ResponseEntity.ok(policyService.getAllPolicies());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Policy> getPolicyById(@PathVariable Long id) {
         Policy policy = policyService.getPolicyById(id);
-        if (policy == null) {
-            return ResponseEntity.notFound().build();
-        }
+
         return ResponseEntity.ok(policy);
     }
 
     @PostMapping
     public ResponseEntity<Policy> createPolicy(@RequestBody Policy policy) {
         Policy created = policyService.createPolicy(policy);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+        return new ResponseEntity<>(created,HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Policy> updatePolicy(@PathVariable Long id, @RequestBody Policy policy) {
+    public ResponseEntity<Policy> updatePolicy(@PathVariable Long id, @Valid @RequestBody Policy policy) {
         Policy updated = policyService.updatePolicy(id, policy);
-        if (updated == null) {
-            return ResponseEntity.notFound().build();
-        }
+
         return ResponseEntity.ok(updated);
     }
 
