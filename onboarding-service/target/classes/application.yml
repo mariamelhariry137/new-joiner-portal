@@ -36,4 +36,4 @@ logging:
 
 app:
   jwt:
-    secret: ${JWT_SECRET}
+    secret: e3GByvQwqLrYV+TgvJpoWGSI/kDpINUEdkNT4N2fkNQ=
