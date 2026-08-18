@@ -24,23 +24,23 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable())
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(authz -> authz
-                        .requestMatchers(
-                                "/actuator/health",
-                                "/actuator/info",
-                                "/swagger-ui/**",
-                                "/v3/api-docs/**",
-                                "/swagger-resources/**",
-                                "/test/token"
-                        ).permitAll()
-                        .requestMatchers("/teams/**").authenticated()
-                        .anyRequest().authenticated()
-                )
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt(
-                        jwt -> jwt.decoder(jwtDecoder())
-                ));
+       http.csrf().disable()
+               .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+               .and()
+               .authorizeHttpRequests().antMatchers(
+                       "/actuator/health",
+                       "/actuator/info",
+                       "/swagger-ui/**",
+                       "/v3/api-docs/**",
+                       "/swagger-resources/**",
+                       "/test/token"
+               ).permitAll()
+               .antMatchers("/teams/**").authenticated()
+               .anyRequest().authenticated()
+                .and()
+                .oauth2ResourceServer()
+                    .jwt()
+                        .decoder(jwtDecoder());
         return http.build();
     }
 

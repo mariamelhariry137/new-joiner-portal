@@ -5,7 +5,7 @@ import com.newjoinerportal.content.exception.ResourceNotFound;
 import com.newjoinerportal.content.exception.ValidationException;
 import com.newjoinerportal.content.model.Team;
 import com.newjoinerportal.content.service.TeamService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
