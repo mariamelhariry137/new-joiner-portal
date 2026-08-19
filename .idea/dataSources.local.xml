@@ -7,11 +7,16 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>mariam</user-name>
+      <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node negative="1">
+            <node kind="database" negative="1" />
+            <node kind="database">
+              <name qname="@" />
+              <name qname="onboarding_db" />
+              <node kind="schema" qname="@" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>

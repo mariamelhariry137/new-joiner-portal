@@ -20,6 +20,24 @@ services:
     networks:
       - portal-net
 
+  auth-service:
+    build:
+      context: .
+      dockerfile: auth-service/Dockerfile
+    container_name: auth-service
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/new_joiner_auth
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}  # ← ADD THIS
+    ports:
+      - "8081:8081"
+    networks:
+      - portal-net
+
   onboarding-service:
     build:
       context: .
@@ -32,7 +50,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/onboarding_db
       SPRING_DATASOURCE_USERNAME: ${DB_USER}
       SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
-      JWT_SECRET: ${JWT_SECRET}
+      JWT_SECRET: ${JWT_SECRET}  # ← ADD THIS
     ports:
       - "8082:8082"
     networks:
@@ -50,6 +68,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/content_db
       SPRING_DATASOURCE_USERNAME: ${DB_USER}
       SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}  # ← ADD THIS
     ports:
       - "8083:8083"
     networks:
@@ -61,31 +80,13 @@ services:
       dockerfile: gateway/Dockerfile
     container_name: gateway
     depends_on:
+      - auth-service       # ← ADD THIS
       - onboarding-service
       - content-service
+    environment:
+      JWT_SECRET: ${JWT_SECRET}  # ← ADD THIS
     ports:
       - "8080:8080"
-    networks:
-      - portal-net
-
-
-
-
-  auth-service:
-    build:
-      context: .
-      dockerfile: auth-service/Dockerfile
-    container_name: auth-service
-    depends_on:
-      postgres:
-        condition: service_healthy
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/identity_db
-      SPRING_DATASOURCE_USERNAME: ${DB_USER}
-      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
-      JWT_SECRET: ${JWT_SECRET}
-    ports:
-      - "8081:8081"
     networks:
       - portal-net
 
