@@ -33,6 +33,8 @@ public class ChecklistCompletionService {
                 .stream()
                 .collect(Collectors.toMap(ChecklistCompletion::getChecklistItemId, c -> c));
 
+        double percentage = calculateCompletionPercentage(userId);
+
         return allItems.stream()
                 .map(item -> {
                     ChecklistCompletion completion = completionsByItemId.get(item.getId());
@@ -42,7 +44,8 @@ public class ChecklistCompletionService {
                             item.getTitle(),
                             item.getOrderIndex(),
                             isCompleted,
-                            completion != null ? completion.getCompletedAt() : null
+                            completion != null ? completion.getCompletedAt() : null,
+                            percentage
                     );
                 })
                 .toList();

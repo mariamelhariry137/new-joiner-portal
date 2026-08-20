@@ -19,7 +19,7 @@ spring:
               args:
                 retries: 3
                 statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
-            - StripPrefix=1
+            # auth-service's own @RequestMapping already includes /api/auth, so the path is forwarded unchanged
 
         # Onboarding Service Routes
         - id: onboarding-service
@@ -35,7 +35,7 @@ spring:
               args:
                 retries: 3
                 statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
-            - StripPrefix=1
+            - RewritePath=/api/onboarding(?<segment>/?.*), /api$\{segment}
 
         # Content Service Routes
         - id: content-service
@@ -51,15 +51,15 @@ spring:
               args:
                 retries: 3
                 statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
-            - StripPrefix=1
+            - RewritePath=/api/content(?<segment>/?.*), /api$\{segment}
 
-  # JWT Configuration
+  # JWT Configuration - consistent across all services
   security:
     oauth2:
       resourceserver:
         jwt:
-          secret:  ${JWT_SECRET:e3GByvQwqLrYV+TgvJpoWGSI/kDpINUEdkNT4N2fkNQ=}
-
+          # This should be the same secret used in all services
+          secret: ${JWT_SECRET:e3GByvQwqLrYV+TgvJpoWGSI/kDpINUEdkNT4N2fkNQ=}
 
 server:
   port: 8080
@@ -82,6 +82,9 @@ management:
       show-details: always
     gateway:
       enabled: true
+  health:
+    redis:
+      enabled: false
 
 # Resilience4J Circuit Breaker Configuration
 resilience4j:
