@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8a36f81-7fe6-45c7-a3a6-1327586b07d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8a36f81-7fe6-45c7-a3a6-1327586b07d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/postgres/init-databases.sh" beforeDir="false" afterPath="$PROJECT_DIR$/infra/postgres/init-databases.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
