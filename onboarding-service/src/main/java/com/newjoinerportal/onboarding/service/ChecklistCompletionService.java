@@ -42,6 +42,7 @@ public class ChecklistCompletionService {
                     return new ChecklistProgressResponse(
                             item.getId(),
                             item.getTitle(),
+                            item.getDescription() != null ? item.getDescription() : "",
                             item.getOrderIndex(),
                             isCompleted,
                             completion != null ? completion.getCompletedAt() : null,
