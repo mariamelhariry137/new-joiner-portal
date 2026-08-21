@@ -1,3 +1,6 @@
+DELETE FROM checklist_completions;
+DELETE FROM checklist_items;
+
 INSERT INTO checklist_items (title, description, order_index) VALUES
     ('Set up your laptop and accounts', 'Order your laptop, get accounts provisioned, and confirm you can log in to everything you need.', 1),
     ('Meet your onboarding buddy', 'Reach out to your assigned onboarding buddy to introduce yourself and schedule a first chat.', 2),
