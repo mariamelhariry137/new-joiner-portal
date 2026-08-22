@@ -1,0 +1,8 @@
+DELETE FROM checklist_completions;
+DELETE FROM checklist_items;
+
+INSERT INTO checklist_items (title, description, order_index) VALUES
+                                                                  ('Set up your laptop and accounts', 'Pick up your laptop from IT in B2. Once you have it, log in with the credentials from your welcome email, connect to VPN, and verify you can access Slack, email, and your team''s shared drive.', 1),
+                                                                  ('Meet your onboarding buddy', 'Your buddy''s name and contact info are in your welcome email. They''re your go-to person for questions that feel too small to ask your manager — send them a message today and grab 30 minutes on their calendar sometime this week.', 2),
+                                                                  ('Complete HR paperwork', 'Head to the HR desk on the 5th floor to complete your tax forms, emergency contact details, and benefits elections in person. Try to get this done within your first week to avoid delays in payroll setup.', 3),
+                                                                  ('Review the company handbook', 'You''ll find the full handbook in the Company Hub on this site, covering PTO policy, expense guidelines, working hours, and code of conduct. You don''t need to memorize it — just skim it once so you know what''s in there and where to look it up later.', 4);
