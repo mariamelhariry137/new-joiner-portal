@@ -1,1 +1,7 @@
+com\newjoinerportal\gateway\handler\GlobalHandler.class
+com\newjoinerportal\gateway\controller\GatewayController.class
 com\newjoinerportal\gateway\GatewayApplication.class
+com\newjoinerportal\gateway\ChecklistProgressResponse.class
+com\newjoinerportal\gateway\filter\JwtFilter.class
+com\newjoinerportal\gateway\filter\LoggingFilter.class
+com\newjoinerportal\gateway\security\SecurityConfig.class

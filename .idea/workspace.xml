@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="done for the token">
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/db/migration/V3__update_roles_to_new_joiner.sql" afterDir="false" />
     <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge branch 'content-service-postgresql' of https://github.com/mariamelhariry137/new-joiner-portal into content-service-postgresql&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8a36f81-7fe6-45c7-a3a6-1327586b07d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8a36f81-7fe6-45c7-a3a6-1327586b07d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/service/JwtService.java" afterDir="false" />
+    <list default="true" id="3f22323d-b6c4-460b-8fa2-11b90dd33f91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/controller/ChecklistItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/CurrentUserResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/java/com/newjoinerportal/onboarding/security/CurrentUserResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/postgres/init-databases.sh" beforeDir="false" afterPath="$PROJECT_DIR$/infra/postgres/init-databases.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding-service/target/classes/application.yml" afterDir="false" />
@@ -20,6 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
+        <option value="Record" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -49,6 +71,73 @@
     &quot;url&quot;: &quot;https://github.com/mariamelhariry137/new-joiner-portal.git&quot;,
     &quot;accountId&quot;: &quot;347164c3-9cd2-4d27-8ffd-46d1f9412441&quot;
   }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4611531652518026" />
+      <entry key="MS500" value="3.869503555121578" />
+      <entry key="S2" value="6.910273290986125" />
+      <entry key="S5" value="8.058556655365917" />
+      <entry key="S10" value="8.50935548049821" />
+      <entry key="S30" value="8.831781881593066" />
+      <entry key="S60" value="8.916234855934976" />
+      <entry key="M2" value="9.319830268652598" />
+      <entry key="M5" value="23.577818553708678" />
+      <entry key="M10" value="60.77966726474533" />
+      <entry key="M15" value="88.42402187009051" />
+      <entry key="M30" value="132.65082169941098" />
+      <entry key="H1" value="170.54298403571062" />
+      <entry key="H2" value="203.8075902675999" />
+      <entry key="H4" value="230.5332419759215" />
+      <entry key="D1" value="313.33108587746125" />
+      <entry key="W1" value="404.6522038274354" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="4.159406074899349E-227" />
+      <entry key="S30" value="3.464791515711704E-76" />
+      <entry key="S60" value="1.8613950455805247E-38" />
+      <entry key="M2" value="1.3643295223590662E-19" />
+      <entry key="M5" value="2.8442541838883357E-8" />
+      <entry key="M10" value="1.6886236025546027E-4" />
+      <entry key="M15" value="0.003088204036357147" />
+      <entry key="M30" value="0.06122459870143346" />
+      <entry key="H1" value="0.31235110555874457" />
+      <entry key="H2" value="0.762848802717701" />
+      <entry key="H4" value="1.223912760723621" />
+      <entry key="D1" value="2.830110421453574" />
+      <entry key="W1" value="5.941616012531414" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.3886516937702795" />
+      <entry key="MS500" value="3.717357586035399" />
+      <entry key="S2" value="6.755903824031205" />
+      <entry key="S5" value="7.973264858397645" />
+      <entry key="S10" value="8.461737868035671" />
+      <entry key="S30" value="8.814686913488682" />
+      <entry key="S60" value="8.907526556126978" />
+      <entry key="M2" value="9.31542138269999" />
+      <entry key="M5" value="23.57582287524057" />
+      <entry key="M10" value="60.778542051227866" />
+      <entry key="M15" value="88.42608552630055" />
+      <entry key="M30" value="132.7112732652709" />
+      <entry key="H1" value="170.85463957158223" />
+      <entry key="H2" value="204.56987889413801" />
+      <entry key="H4" value="231.75677963060545" />
+      <entry key="D1" value="316.161069340542" />
+      <entry key="W1" value="410.5937870649165" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
@@ -77,6 +166,10 @@
     "Spring Boot.OnboardingServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "#110 on gateway",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "feature/issue-12-role-authorization",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
