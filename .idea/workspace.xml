@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge remote-tracking branch 'origin/main' into feature/issue-12-role-authorization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/JwtConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/JwtConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/newjoinerportal/auth/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/newjoinerportal/gateway/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="d5ac5948-9c5d-45d5-bc16-adeb4901902a" name="Changes" comment="Merge remote-tracking branch 'origin/main' into feature/issue-12-role-authorization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +77,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ALl services working" />
-    <option name="LAST_COMMIT_MESSAGE" value="ALl services working" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main' into feature/issue-12-role-authorization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main' into feature/issue-12-role-authorization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
 </project>
