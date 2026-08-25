@@ -105,6 +105,13 @@ class ChecklistCompletionServiceTest {
     }
 
     @Test
+    void checklistItemWithoutDescription_defaultsToEmptyString() {
+        ChecklistItem item = new ChecklistItem("Set up laptop", null, 1);
+
+        assertThat(item.getDescription()).isEmpty();
+    }
+
+    @Test
     void markCompletion_zeroTotalItems_returnsZeroPercentWithoutError() {
         Long userId = 1L;
         Long itemId = 1L;
