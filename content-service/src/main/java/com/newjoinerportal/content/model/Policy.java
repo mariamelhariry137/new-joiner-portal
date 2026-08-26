@@ -18,6 +18,8 @@ public class Policy {
     @Size(min=3, max = 20)
     @Column(nullable = false)
     private String title;
+
+
     @NotBlank(message = "Description of policy cant be empty")
     @Column(columnDefinition = "TEXT", nullable = false)
     private String description;

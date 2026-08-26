@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "new-joiner-portal-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "../new-joiner-portal-frontend", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}
