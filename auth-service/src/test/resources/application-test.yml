@@ -1,0 +1,3 @@
+jwt:
+  secret: bws09WVFsJwLHG5iGO4xWsxwiz4hvmVHlih2BreObIE=
+  expiration-seconds: 3600

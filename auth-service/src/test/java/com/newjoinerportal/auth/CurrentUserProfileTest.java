@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -27,6 +28,9 @@ class CurrentUserProfileTest {
     @MockBean
     private AuthService authService;
 
+    @MockBean
+    private JwtDecoder jwtDecoder;
+
     @Test
     @WithMockUser(username = "john@vois.com")
     void authenticatedUserCanGetOwnProfile() throws Exception {
@@ -41,7 +45,7 @@ class CurrentUserProfileTest {
                         )
                 );
 
-        mockMvc.perform(get("/me"))
+        mockMvc.perform(get("/api/auth/me"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.email").value("john@vois.com"))
@@ -54,7 +58,7 @@ class CurrentUserProfileTest {
     @Test
     void unauthenticatedUserCannotGetProfile() throws Exception {
 
-        mockMvc.perform(get("/me"))
-                .andExpect(status().isForbidden());
+        mockMvc.perform(get("/api/auth/me"))
+                .andExpect(status().isUnauthorized());
     }
 }
