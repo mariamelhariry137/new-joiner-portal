@@ -65,7 +65,8 @@ public class FaqController {
 
     @DeleteMapping("/admin/faqs/{id}")
     public ResponseEntity<Void> deactivateFaq(
-            @PathVariable Long id
+
+              @PathVariable Long id
     ) {
 
         faqService.deactivateFaq(id);
