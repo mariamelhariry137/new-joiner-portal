@@ -97,7 +97,7 @@ public class SecurityConfig {
 
         // Frontend origin
         configuration.setAllowedOrigins(
-                List.of("http://localhost:3000")
+                List.of("http://localhost:3000", "http://localhost:3001")
         );
 
         // HTTP methods used by the frontend
